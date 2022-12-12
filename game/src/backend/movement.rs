@@ -1,4 +1,6 @@
 //! This file contains the movement system, which is responsible for moving the player around the map and to interact with objects.
+//! Author: ["Benedikt Brandmaier", "Marion Hinkel", "Sander Stella", "Philipp Wolf"]
+
 use crate::backend::constants::MOVEMENT_SPEED;
 use crate::backend::gamestate::GameState;
 use crate::backend::screen::StackCommand;

@@ -1,4 +1,6 @@
-//! This File contains the code surrounding `MachineSprite`
+//! This File contains the code surrounding the `MachineSprite` used to hold the graphics of our
+//! machines.
+//! Author: ["Benedikt Brandmaier", "Sander Stella"]
 use crate::machines::machine::State;
 use ggez::graphics::Image;
 

@@ -1,3 +1,5 @@
+//! Contains our error types.
+//! Author: ["Benedikt Brandmaier", "Philipp Wolf" ]
 use crate::backend::gamestate::GameCommand;
 use crate::backend::screen::StackCommand;
 use ggez::GameError;
@@ -42,6 +44,7 @@ impl From<io::Error> for RLError {
     }
 }
 /// Creates an Io Error
+/// Author: ["Benedikt Brandmaier"]
 fn create_io_error(message: &str, value: impl std::fmt::Display) -> RLError {
     error!("{}: {}", message, value);
     RLError::IO(io::Error::new(
@@ -50,6 +53,7 @@ fn create_io_error(message: &str, value: impl std::fmt::Display) -> RLError {
     ))
 }
 /// Macro for converting a `SendError` to an `RLError`
+/// Author: ["Benedikt Brandmaier"]
 #[macro_export]
 macro_rules! convert_senderror {
     ($($command:ty),*) => {

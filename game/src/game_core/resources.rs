@@ -1,3 +1,5 @@
+//! Contains the resources in the game(oxygen, energy and life and their associated functions)
+//! Author: ["Benedikt Brandmaier", "Maximilian Floto", "Marion Hinkel", "Sander Stella"]
 use crate::game_core::infoscreen::DeathReason;
 use serde::{Deserialize, Serialize};
 use std::cmp::PartialOrd;

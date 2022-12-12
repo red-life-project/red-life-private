@@ -1,4 +1,5 @@
-// build.rs
+//! Our custom build script, which copies the assets to our target directory.
+//! Author: ["Benedikt Brandmaier"]
 
 use std::env;
 extern crate fs_extra;

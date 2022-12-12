@@ -1,3 +1,5 @@
+//! Contains the `MainMenu` screen used to draw the mainmenu.
+//! Author: ["Benedikt Brandmaier", "Maximilian Floto", "Leo Schnüll"]
 use crate::backend::rlcolor::RLColor;
 use crate::backend::{
     gamestate::GameState,

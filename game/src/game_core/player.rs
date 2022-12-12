@@ -1,3 +1,6 @@
+//! Contains everything related to the Player
+//! Author: ["Marion Hinkel", "Sander Stella", "Philipp Wolf"]
+
 use crate::backend::constants::DESIRED_FPS;
 use crate::backend::rlcolor::RLColor;
 use crate::backend::screen::{Popup, StackCommand};

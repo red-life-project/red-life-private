@@ -14,6 +14,7 @@
 //     You should have received a copy of the GNU General Public License
 //     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //! Starts the game and handles window configuration
+//! Author: ["Benedikt Brandmaier", "Philipp Wolf"]
 #![warn(clippy::pedantic)]
 #![allow(clippy::cast_precision_loss)]
 #![allow(clippy::cast_possible_truncation)]

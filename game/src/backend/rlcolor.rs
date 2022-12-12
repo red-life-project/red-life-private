@@ -1,4 +1,6 @@
 //! Contains the color definitions for the game. Every color is defined as a constant.
+//! Author: ["Maximilian Floto", "Philipp Wolf"]
+
 use ggez::graphics::Color;
 /// Storing colors used in the game as constants
 pub struct RLColor {}

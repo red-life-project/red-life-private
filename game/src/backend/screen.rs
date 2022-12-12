@@ -1,4 +1,5 @@
 //! Contains the screen system, which is responsible for managing the different screens of the game.
+//! Author: ["Benedikt Brandmaier", "Marion Hinkel", "Philipp Wolf"]
 use crate::backend::rlcolor::RLColor;
 use crate::backend::utils::{get_draw_params, get_scale};
 use crate::error::RLError;

@@ -1,3 +1,5 @@
+//! Contains logic for our infoscreens, notably the tutorial screen and the deathscreen.
+//! Author: ["Benedikt Brandmaier", "Maximilian Floto", "Marion Hinkel", "Leo Schnüll", "Philipp Wolf"]
 use crate::backend::gamestate::{GameCommand, GameState};
 use crate::backend::screen::{Screen, StackCommand};
 use crate::backend::utils::{get_draw_params, get_scale};

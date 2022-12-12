@@ -1,3 +1,5 @@
+//! This file contains structs and functions for the buttons used in the main menu
+//! Author: ["Maximilian Floto"]
 use crate::backend::utils::{get_draw_params, get_scale};
 use crate::main_menu::mainmenu::Message;
 use crate::{draw, RLResult};

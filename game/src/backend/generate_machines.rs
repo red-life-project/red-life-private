@@ -1,4 +1,5 @@
 //! This File handels code surrounding Machine with in `GameState`
+//! Author: ["Benedikt Brandmaier", "Sander Stella", "Philipp Wolf"]
 use crate::backend::constants::gen_all_machines;
 use crate::backend::gamestate::GameState;
 use crate::backend::rlcolor::RLColor;

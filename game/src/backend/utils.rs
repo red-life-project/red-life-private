@@ -1,4 +1,5 @@
 //! Miscellaneous utilities used by the backend.
+//! Author: ["Benedikt Brandmaier", "Marion Hinkel"]
 use crate::backend::constants::{PLAYER_ICON_SIZE, SCREEN_RESOLUTION};
 use ggez::glam::Vec2;
 use ggez::graphics::{Color, Rect};
@@ -23,6 +24,7 @@ pub fn get_scale(ctx: &Context) -> Vec2 {
 /// # Returns
 /// * `true` if the player collides with an area
 /// * `false` if the player does not collide with an area
+/// Author: ["Marion Hinkel"]
 #[inline(always)]
 pub fn is_colliding(player_pos: (usize, usize), area: &Rect) -> bool {
     area.x < player_pos.0 as f32 + PLAYER_ICON_SIZE.0 as f32
@@ -33,6 +35,7 @@ pub fn is_colliding(player_pos: (usize, usize), area: &Rect) -> bool {
 
 /// This macro is used for simplifying drawing with scaling.
 /// It takes a canvas, a `Drawable`, an (optional) position(as `Vec2` for example) and a scale as `Vec2`.
+/// Author: ["Benedikt Brandmaier"]
 #[macro_export]
 macro_rules! draw {
     ($canvas: expr, $asset: expr, $position: expr, $scale: expr) => {
@@ -52,6 +55,7 @@ macro_rules! draw {
 /// * `color` - The optional color of the asset
 /// # Returns
 /// The draw parameters
+/// Author: ["Benedikt Brandmaier"]
 pub fn get_draw_params(
     position: Option<Vec2>,
     scale: Vec2,

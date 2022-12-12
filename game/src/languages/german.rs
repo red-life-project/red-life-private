@@ -1,4 +1,5 @@
 //! Contains constants for the language "German".
+//! Author: ["Maximilian Floto", "Marion Hinkel", "Philipp Wolf"]
 
 /// Constant for item `Gedrucktesteil`.
 pub const GEDRUCKTESTEIL: [&str; 3] = [

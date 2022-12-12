@@ -1,4 +1,5 @@
-//! This File handels everything about Machine
+//! This File handles everything about Machine
+//! Author: [ "Sander Stella", "Philipp Wolf"]
 use crate::backend::constants::PLAYER_INTERACTION_RADIUS;
 use crate::backend::gamestate::GameCommand;
 use crate::backend::rlcolor::RLColor;
@@ -45,7 +46,7 @@ impl From<State> for Color {
         }
     }
 }
-/// The Machine Class handels any internal logik surrounding intractable objects
+/// The Machine Class handles any internal logic surrounding interactable objects
 /// This includes objects that arnt classic Machines per se but since they do behave so similarity
 /// we can reuse the same code for it
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -116,9 +117,9 @@ impl Machine {
         }
     }
 
-    /// Alternative new constructor for the machine using one parameter Tupel
+    /// Alternative new constructor for the machine using one parameter tuple
     /// # Arguments
-    /// * `(name, hit_box, trades, running_resources)` - Tupel containing the same arguments as `new()`
+    /// * `(name, hit_box, trades, running_resources)` - a tuple containing the same arguments as `new()`
     /// # Returns
     /// * 'Machine'
     pub(crate) fn new_by_const(
@@ -127,8 +128,8 @@ impl Machine {
         Machine::new(name, hit_box, trades, running_resources)
     }
 
-    /// initialises the Maschine with the data that is not Serialize
-    /// This funktion is required to be called before the firs draw call
+    /// Initializes the machine with the data that is not Serialize
+    /// This function is required to be called before the first draw call
     /// # Arguments
     /// * `images` - A Slice of Images containing the sprites for this Machine
     /// * `sender` - A sender of type `Sender<GameCommand>`
@@ -180,9 +181,9 @@ impl Machine {
         is_colliding(pos, &self.interaction_area)
     }
 
-    /// Handel's the interaction of the Maschine and the player
+    /// Handles the interaction of the machine and the player
     /// # Arguments
-    /// * `player` - of type `& Player` is a reference to the player
+    /// * `player` - a reference to the player
     pub(crate) fn interact(&mut self, player: &Player) -> RLResult {
         // Check if there is a possible trade
         let trade = match self.trades.iter().find(|t| t.initial_state == self.state) {

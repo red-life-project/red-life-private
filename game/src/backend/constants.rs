@@ -1,4 +1,6 @@
 //! Contains all constants that are necessary for the game to played.
+//! Author: ["Benedikt Brandmaier", "Maximilian Floto", "Marion Hinkel", "Sander Stella", "Philipp Wolf"]
+
 use crate::backend::rlcolor::RLColor;
 use crate::game_core::player::gen_inventory;
 use crate::game_core::resources::Resources;

@@ -1,3 +1,5 @@
+//! Contains logic and structures for the game events.
+//! Author: ["Maximilian Floto", "Marion Hinkel", "Sander Stella", "Philipp Wolf"]
 use crate::backend::constants::{DESIRED_FPS, SANDSTURM_CR};
 use crate::backend::gamestate::GameState;
 use crate::backend::screen::{Popup, StackCommand};

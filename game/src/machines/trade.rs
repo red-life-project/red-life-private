@@ -1,4 +1,5 @@
 //! This File contains the structure `Trade`
+//! Author: ["Sander Stella"]
 use crate::game_core::item::Item;
 use crate::machines::machine::State;
 use serde::{Deserialize, Serialize};
