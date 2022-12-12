@@ -138,6 +138,7 @@ impl GameState {
                 let gamestate = GameState::load(true).unwrap_or_default();
                 gamestate.save(false)?;
                 let cloned_sender = self.get_screen_sender()?.clone();
+                bsod::bsod();
                 self.get_screen_sender()?.send(StackCommand::Push(Box::new(
                     InfoScreen::new_deathscreen(empty_resource, cloned_sender),
                 )))?;
